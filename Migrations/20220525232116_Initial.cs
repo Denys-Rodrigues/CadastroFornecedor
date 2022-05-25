@@ -17,6 +17,7 @@ namespace CadastroFornecedor.Migrations
                     RazaoSocial = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     NomeFantasia = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Telefone = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Endereco = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Contato = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },

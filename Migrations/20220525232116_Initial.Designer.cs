@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CadastroFornecedor.Migrations
 {
     [DbContext(typeof(AppCont))]
-    [Migration("20220316190540_Initial")]
+    [Migration("20220525232116_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -48,6 +48,10 @@ namespace CadastroFornecedor.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("RazaoSocial")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Telefone")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
