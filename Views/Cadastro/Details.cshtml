@@ -1,0 +1,54 @@
+﻿@model CadastroFornecedor.Models.Cadastro
+
+@{
+	ViewData["Title"] = "Details";
+}
+
+<h1>Detalhes do Fornecedor</h1>
+
+<div>
+	<h4>Fornecedor</h4>
+	<hr />
+	<dl class="row">
+		<dt class="col-sm-2">
+			@Html.DisplayNameFor(model => model.RazaoSocial)
+		</dt>
+		<dd class="col-sm-10">
+			@Html.DisplayFor(model => model.RazaoSocial)
+		</dd>
+		<dt class="col-sm-2">
+			@Html.DisplayNameFor(model => model.NomeFantasia)
+		</dt>
+		<dd class="col-sm-10">
+			@Html.DisplayFor(model => model.NomeFantasia)
+		</dd>
+		<dt class="col-sm-2">
+			@Html.DisplayNameFor(model => model.Email)
+		</dt>
+		<dd class="col-sm-10">
+			@Html.DisplayFor(model => model.Email)
+		</dd>
+		<dt class="col-sm-2">
+			@Html.DisplayNameFor(model => model.Telefone)
+		</dt>
+		<dd class="col-sm-10">
+			@Html.DisplayFor(model => model.Telefone)
+		</dd>
+		<dt class="col-sm-2">
+			@Html.DisplayNameFor(model => model.Endereco)
+		</dt>
+		<dd class="col-sm-10">
+			@Html.DisplayFor(model => model.Endereco)
+		</dd>
+		<dt class="col-sm-2">
+			@Html.DisplayNameFor(model => model.Contato)
+		</dt>
+		<dd class="col-sm-10">
+			@Html.DisplayFor(model => model.Contato)
+		</dd>
+	</dl>
+</div>
+<div>
+	<a class="btn btn-outline-primary btn-sm" asp-action="Edit" asp-route-id="@Model?.Id">Editar</a>
+	<a class="btn btn-secondary text-white btn-sm" asp-action="Index">Voltar</a>
+</div>
